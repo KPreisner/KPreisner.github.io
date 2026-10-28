@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karl Preisner</title>
+  <meta name="description" content="Karl Preisner, computer scientist. AI agents, APIs, distributed systems, and high-performance computing.">
+  <meta property="og:title" content="Karl Preisner">
+  <meta property="og:description" content="Computer scientist building AI agents, APIs, distributed systems, and high-performance computing infrastructure.">
+  <meta property="og:url" content="https://karl.preisner.us/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50' y='68' font-size='52' font-family='Helvetica,Arial,sans-serif' font-weight='700' text-anchor='middle' fill='white'>KP</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+
+    <header class="hero">
+      <!-- Swap for a local photo later: images/karl.jpg -->
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/107863522?v=4&s=240" alt="Karl Preisner" width="120" height="120">
+      <div>
+        <h1>Karl Preisner</h1>
+        <p class="lede">
+          Computer scientist who builds AI agents, APIs, distributed systems, and
+          high-performance computing infrastructure. Previously Sindri Labs' first technical
+          hire, where I spent four years designing and coding products across AI and
+          zero-knowledge proving.
+        </p>
+        <nav class="links" aria-label="Contact">
+          <a href="https://github.com/KPreisner">GitHub</a>
+          <!-- TODO: LinkedIn, résumé PDF (images/ or a /resume.pdf), email -->
+        </nav>
+      </div>
+    </header>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">Projects</h2>
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Markovian Semantic Relatedness</h3>
+            <span class="badge badge-soon">Demo coming soon</span>
+          </div>
+          <p>
+            Unsupervised query expansion and cross-language search. MSR builds a term
+            co-occurrence graph, runs a Markov-chain walk toward a root term, and scores every
+            term by z-scored hitting time. The result is a weighted <em>concept</em> that can rank
+            untranslated foreign-language text for an English query, without machine translation.
+          </p>
+          <p class="note">
+            I designed MSR and led the project as a U.S. Government researcher (2019–2022). This is
+            a from-scratch reimplementation.
+          </p>
+          <p class="stack">Python · NumPy/SciPy · spaCy · FastAPI · Celery · RabbitMQ · PostgreSQL · Next.js · Docker</p>
+          <div class="actions">
+            <a href="https://github.com/KPreisner/markovian-semantic-relatedness">Code</a>
+            <a href="https://github.com/KPreisner/markovian-semantic-relatedness/blob/main/docs/paper/MarkovianSemanticRelatedness_april_25_2022.pdf">Paper</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>CHIP</h3>
+            <span class="badge badge-live">Live demo</span>
+          </div>
+          <p>
+            Confounding Hash Iteration for Passwords: an iterated password hash that keeps hashing
+            until it has seen a set number of collisions among the low bits of its digests, so the
+            iteration count depends on the password and salt in a way you can't predict without
+            running the whole chain.
+          </p>
+          <p class="stack">Python · Pyodide · Web Workers</p>
+          <div class="actions">
+            <a class="primary" href="/chip/">Try the demo</a>
+            <a href="https://github.com/KPreisner/chip">Code</a>
+            <a href="https://github.com/KPreisner/chip/blob/main/docs/paper.md">Paper</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section aria-labelledby="work">
+      <h2 id="work">What I've worked on</h2>
+      <ul class="work">
+        <li><strong>AI agents.</strong> Request-routing agents, custom function tools, file retrieval, integrations, automations, and a text extraction pipeline for an AI executive assistant.</li>
+        <li><strong>Zero-knowledge proving.</strong> Invented the mathematical approach behind <a href="https://medium.com/@sindrilabs/sagittal-msm-a-streamlined-msm-implementation-a9dcc07da585">Sagittal MSM</a> and helped build a multi-cloud proving platform that ran GPU workloads for production customers.</li>
+        <li><strong>Blockchain analytics.</strong> Python and Django services for token and NFT event analysis, cryptocurrency price ingestion, and wallet segmentation.</li>
+        <li><strong>Confidential AI.</strong> Prototyped encrypted client-to-enclave requests for model inference in a trusted execution environment.</li>
+        <li><strong>Semantic search research.</strong> Led a team building a cross-language retrieval system using unsupervised learning and graph analytics.</li>
+        <li><strong>Computer vision research.</strong> A real-time system that used a high-speed camera and CUDA to recover sound from the vibrations of ordinary objects.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Technologies</h2>
+      <ul class="tags">
+        <li>Python</li><li>TypeScript</li><li>C++</li><li>CUDA</li><li>PostgreSQL</li>
+        <li>Django</li><li>FastAPI</li><li>Next.js</li><li>Docker</li><li>Kubernetes</li><li>OpenAI APIs</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <p>
+        <strong>The George Washington University</strong><br>
+        M.S. in Computer Science<br>
+        B.S. in Computer Science, minors in Mathematics and Music
+      </p>
+      <p class="note">Fun fact: I've performed for half a million people on trumpet 🎺</p>
+    </section>
+
+    <footer>
+      <p>© <span id="year">2026</span> Karl Preisner</p>
+    </footer>
+  </main>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
