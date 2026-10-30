@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Karl Preisner</title>
-  <meta name="description" content="Karl Preisner, computer scientist. AI agents, APIs, distributed systems, and high-performance computing.">
+  <meta name="description" content="Karl Preisner, software engineer. Machine learning systems, GPU-accelerated algorithms, and production distributed platforms.">
   <meta property="og:title" content="Karl Preisner">
-  <meta property="og:description" content="Computer scientist building AI agents, APIs, distributed systems, and high-performance computing infrastructure.">
+  <meta property="og:description" content="Software engineer building machine learning systems, GPU-accelerated algorithms, and production distributed platforms.">
   <meta property="og:url" content="https://karl.preisner.us/">
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50' y='68' font-size='52' font-family='Helvetica,Arial,sans-serif' font-weight='700' text-anchor='middle' fill='white'>KP</text></svg>">
@@ -20,12 +20,19 @@
       <div>
         <h1>Karl Preisner</h1>
         <p class="lede">
-          Computer scientist (M.S., GWU) who builds AI agents, APIs, distributed systems, and
-          high-performance computing infrastructure. Previously Sindri Labs' first technical
-          hire, where I spent four years designing and coding products across AI and
-          zero-knowledge proving. Along the way I grew and led the engineering team to 7+
-          people and helped raise $10M in venture funding. Before Sindri, I was a U.S.
-          Government researcher.
+          Software engineer (M.S. Computer Science, GWU) with <strong>8 years</strong> of industry experience
+          building machine learning systems, GPU-accelerated algorithms, and production
+          distributed platforms across the full stack. As Sindri Labs' first technical hire, I
+          helped secure <strong>$10M in venture funding</strong> and built ZK proving infrastructure running
+          across hundreds of GPU machines at 99.99% uptime, production LLM agents, and
+          full-stack product features; the proving platform reached <strong>$1M in annual recurring
+          revenue</strong>. Before Sindri, I was a <strong>U.S. Government researcher</strong>. In both roles, I worked
+          directly with customers and senior leadership to turn their requirements into
+          deployed systems.
+        </p>
+        <p class="lede">
+          My strengths are ML and AI agent design and optimization, algorithm design and
+          benchmarking, CUDA/C++ performance tuning, and reliable APIs and SDKs.
         </p>
         <nav class="links" aria-label="Contact">
           <a class="contact" href="mailto:karl@preisner.us">Contact me</a>
@@ -59,7 +66,7 @@
           <div class="actions">
             <a class="primary" href="https://msr.preisner.us">Try the demo</a>
             <a href="https://github.com/KPreisner/markovian-semantic-relatedness">Code</a>
-            <a href="https://github.com/KPreisner/markovian-semantic-relatedness/blob/main/docs/paper/MarkovianSemanticRelatedness_april_25_2022.pdf">Paper</a>
+            <a href="https://msr.preisner.us/MarkovianSemanticRelatedness_april_25_2022.pdf">Paper</a>
           </div>
         </article>
 
@@ -82,29 +89,76 @@
           </div>
         </article>
 
+        <article class="card" id="sagittal">
+          <div class="card-head">
+            <h3>Sagittal MSM</h3>
+            <span class="badge badge-soon">Code coming soon</span>
+          </div>
+          <p>
+            A faster approach to <a href="https://www.zprize.io/prizes/accelerating-msm-operations-on-gpu-fpga">multi-scalar multiplication (MSM)</a> of
+            <a href="https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication">elliptic-curve points</a>, one of the most expensive steps in
+            <a href="https://en.wikipedia.org/wiki/Zero-knowledge_proof">zero-knowledge proving</a>. I invented the mathematical
+            approach, built Python operation models and a C++ reference, then directed and reviewed
+            CPU/GPU implementations with colleagues and a Draper Labs contractor. It doubled
+            processing throughput and outperformed the winning <a href="https://www.zprize.io/blog/announcing-zprize-results">2022 ZPrize</a> GPU
+            entries in internal benchmarks.
+          </p>
+          <p class="note">
+            Those results were a crucial part of the technical case behind Sindri's $5M seed round,
+            led by <a href="https://www.coinfund.io">CoinFund</a>.
+          </p>
+          <p class="stack">Python · C++ · CUDA</p>
+          <div class="actions">
+            <a href="https://medium.com/@sindrilabs/sagittal-msm-a-streamlined-msm-implementation-a9dcc07da585">Article</a>
+          </div>
+        </article>
+
       </div>
     </section>
 
     <section aria-labelledby="work">
       <h2 id="work">What I've worked on</h2>
-      <ul class="work">
-        <li><strong>AI agents.</strong> Request-routing agents, custom function tools, file retrieval, integrations, and automations for Deck, an AI executive assistant. Its text extraction pipeline for dozens of file types produced more complete text than OpenAI's file ingestion in internal benchmarks.</li>
-        <li><strong>Zero-knowledge proving.</strong> Invented the mathematical approach behind <a href="https://medium.com/@sindrilabs/sagittal-msm-a-streamlined-msm-implementation-a9dcc07da585">Sagittal MSM</a>, which doubled throughput and beat the winning 2022 ZPrize GPU entries in internal benchmarks. Helped build a proving API that ran across hundreds of GPU machines on GKE and CoreWeave, handled bursts of thousands of requests per minute at 99.99% uptime, and served production customers including Zircuit and Zerion's ZERO Network.</li>
-        <li><strong>Blockchain analytics.</strong> Python and Django services for token and NFT event analysis, cryptocurrency price ingestion, and wallet segmentation.</li>
-        <li><strong>Confidential AI.</strong> An OpenAI-compatible API gateway for model inference in Intel TDX enclaves, and a prototype for encrypted client-to-enclave requests and streamed responses.</li>
-        <li><strong>Semantic search research.</strong> Led a team of 10+ building <a href="#msr">Markovian Semantic Relatedness</a>, a cross-language retrieval system using unsupervised learning and graph analytics. It cut analyst search time by 50%.</li>
-        <li><strong>Computer vision research.</strong> A real-time system that used a high-speed camera and CUDA to recover sound from the vibrations of ordinary objects, turning days of post-processing into real-time output.</li>
-      </ul>
+      <div class="role">
+        <h3>Sindri Labs</h3>
+        <p class="role-meta">Founding Engineer, Lead Developer, Director of Engineering · 2022–2026</p>
+        <p>
+          I joined as Sindri's first technical hire and wrote core product code throughout, from
+          GPU proving infrastructure to APIs, SDKs, and production LLM agents. I grew the
+          engineering team to 7+ and led system design and code review. I worked directly with
+          customers to translate high-level requirements into system designs and then built them,
+          and I delivered the core product architecture, technical vision, and investor-ready
+          benchmarks that helped secure $10M in venture funding.
+        </p>
+        <ul class="work">
+          <li><strong>AI agents.</strong> Designed and built production agents for Deck, Sindri's AI executive assistant, that routed user requests, searched project files, used integrations, and configured automations, and migrated its agent stack from direct OpenAI Responses API calls to the Agents SDK. Tuned agents from production traces, added automatic context trimming for long-running sessions, and benchmarked model upgrades against real-world requests before rollout. Also built Deck's text extraction pipeline for dozens of file types, which produced more complete text than OpenAI's file ingestion in internal benchmarks.</li>
+          <li><strong>Zero-knowledge proving.</strong> Invented the mathematical approach behind <a href="#sagittal">Sagittal MSM</a>, which doubled throughput, beat the winning 2022 ZPrize GPU entries in internal benchmarks, and helped underpin Sindri's $5M seed round. Led design and code review of parallel proof execution across hundreds of GPU machines on GKE and CoreWeave for a general-purpose proving API that handled bursts of thousands of requests per minute at 99.99% uptime, reached $1M in ARR, and served customers including Zircuit and Zerion's ZERO Network. Also owned its <a href="https://github.com/Sindri-Labs/sindri-python">open-source Python SDK</a>.</li>
+          <li><strong>Confidential AI.</strong> An OpenAI-compatible API gateway for model inference in Intel TDX enclaves, and the encryption prototype for client-to-enclave requests and streamed responses.</li>
+          <li><strong>Blockchain analytics.</strong> Python and Django services for token and NFT event analysis, cryptocurrency price ingestion, and wallet segmentation.</li>
+        </ul>
+      </div>
+      <div class="role">
+        <h3>U.S. Government</h3>
+        <p class="role-meta">Computer Systems Researcher · 2019–2022</p>
+        <ul class="work">
+          <li><strong>Semantic search research.</strong> Led a team of 10+ building <a href="#msr">Markovian Semantic Relatedness</a>, a cross-language retrieval system using unsupervised learning and graph analytics. It cut analyst search time by 50%.</li>
+          <li><strong>Computer vision research.</strong> A real-time system that used a high-speed camera and CUDA to recover sound from the vibrations of ordinary objects, turning days of post-processing into real-time output.</li>
+        </ul>
+      </div>
     </section>
 
     <section aria-labelledby="skills">
-      <h2 id="skills">Technologies</h2>
-      <ul class="tags">
-        <li>Python</li><li>TypeScript/JavaScript</li><li>SQL</li><li>Go</li><li>C/C++</li><li>CUDA</li>
-        <li>Bash</li><li>Java</li><li>Rust</li><li>MATLAB</li><li>Solidity</li>
-        <li>PostgreSQL</li><li>Django</li><li>FastAPI</li><li>Celery</li><li>RabbitMQ</li><li>Next.js</li><li>Docker</li>
-        <li>Kubernetes</li><li>GCP</li><li>AWS</li><li>OpenAI APIs</li>
-      </ul>
+      <h2 id="skills">Technical skills</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Python, C/C++, CUDA, TypeScript/JavaScript, Java, SQL, Go, Rust, Bash, MATLAB</dd></div>
+        <div><dt>ML and AI</dt><dd>PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, OpenCV, NumPy, SciPy, pandas, spaCy; OpenAI Responses API and Agents SDK, MCP, vector search and retrieval, agent evaluation, MLflow</dd></div>
+        <div><dt>GPU and performance</dt><dd>CUDA, CuPy, cuBLAS, cuSPARSE, Thrust, NVIDIA Nsight, cuda-gdb, Valgrind, CMake</dd></div>
+        <div><dt>Sensors and embedded</dt><dd>High-speed cameras, FLIR cameras, Ouster LIDAR, Arduino, Raspberry Pi, servo/stepper motor control, real-time signal and image processing</dd></div>
+        <div><dt>Backend and frontend</dt><dd>Django (Ninja, DRF), FastAPI, Flask, Celery, asyncio, Pydantic; Next.js, React, Node.js</dd></div>
+        <div><dt>Cloud and infrastructure</dt><dd>GCP/GKE, AWS (S3, ECS, EC2), CoreWeave, Kubernetes, Helm, Argo CD, Docker, GitHub Actions, NGINX, Traefik, NVIDIA Container Toolkit</dd></div>
+        <div><dt>Data, messaging, and observability</dt><dd>PostgreSQL, SQLAlchemy, Alembic, PgBouncer, Redis, RabbitMQ, Kafka, NATS JetStream, Prometheus, Grafana, Loki, Sentry</dd></div>
+        <div><dt>ZK and cryptography</dt><dd>Circom, Gnark, Noir, Halo2, Plonky2, SP1, RISC Zero, MSM/NTT, key exchange and authenticated encryption</dd></div>
+        <div><dt>Testing and tooling</dt><dd>pytest, Vitest, Ruff, mypy, ESLint, uv, Poetry, Claude Code</dd></div>
+      </dl>
     </section>
 
     <section aria-labelledby="education">
@@ -114,7 +168,10 @@
         M.S. in Computer Science<br>
         B.S. in Computer Science, minors in Mathematics and Music
       </p>
-      <p class="note">Fun fact: I played lead trumpet in the Carolina Crown Drum and Bugle Corps, performing for half a million people a year and winning the 2013 World Championship 🎺</p>
+      <div class="crown">
+        <img src="images/crown13karl.jpg" alt="Karl in his Carolina Crown uniform after the 2013 World Championship, beside the Jim Ott Memorial Award for excellence in brass" width="140" height="140" loading="lazy">
+        <p class="note">Fun fact: I played trumpet in the Carolina Crown Drum and Bugle Corps from 2013 to 2016, including as lead trumpet, performing for half a million people a year. In 2013 we won the World Championship (<a href="https://www.youtube.com/watch?v=o8E8MJQgFog">watch the performance</a>) 🎺</p>
+      </div>
     </section>
 
     <footer>
